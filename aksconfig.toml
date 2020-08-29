@@ -1,0 +1,28 @@
+[aks_cluster]
+code1 = '12345'
+code2 = 'Z100'
+k8s_version = '1.17.3'
+region_code = 'ES'
+env = 'NP'
+sequence = '01'
+region = 'AMER'
+# name of the subnet (not used)
+subnet = 'S'
+tenant = 'AKS'
+location = 'centralus'
+logging_rg_name = ''
+logging_storage_account = ''
+logging_analytics_workspace = ''
+
+[agent_pool_profile]
+# count is the number of agents (VMs) to host docker containers
+# max value is 100
+count = 1
+vm_size = 'Standard_a2_v2'
+#vnet_subnet_id = 'id'
+# Maximum number of pods that can run on a node
+max_pods = 30
+# Maximum number of nodes for auto-scaling
+max_count = 10
+# Minimum number of nodes for auto-scaling
+min_count = 1

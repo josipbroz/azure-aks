@@ -1,0 +1,5 @@
+setEnvVars.ps1
+README.txt
+managed-cluster-object.txt
+id_rsa2.pub
+az-k8s-python-notes.txt
